@@ -1,0 +1,59 @@
+<!-- create a form that takes your name, email and comments. The form should have a submit button. When the submit button is clicked, the form should send the data to a PHP file. The PHP file should then send an email to the email address provided in the form. The email should contain the name and comments provided in the form. The email should be sent using the mail() function in PHP. The form should also have a reset button that clears all the fields when clicked. -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            animation: gradientAnimation 10s infinite;
+            background-image: radial-gradient(circle, #ff9a9e, #fad0c4, #a18cd1, #fbc2eb, #84fab0, #8fd3f4);
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 400px;
+            margin: 0 auto;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <form action="form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" required></textarea><br><br>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+            <!-- create a checkbox that asks you about the website rating> -->
+            <label for="rating">Rate our website: </label><br>
+            <input type="radio" id="rating" name="rating" value="1">1
+            <input type="radio" id="rating" name="rating" value="2">2
+            <input type="radio" id="rating" name="rating" value="3">3
+            <input type="radio" id="rating" name="rating" value="4">4
+            <input type="radio" id="rating" name="rating" value="5">5
+
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Form </title>
+    </head>
+    <body>
+        <form method = "post">
+            <p>
+            <label>Email: 
+                <input type="email" name = "email" required>
+            </label>
+            </p>
+            <p>
+                <label>Choose your Gender: <br><br>
+                    <input type = "radio" name="gender" value="Male"><label>Male</label>
+                    <input type="radio" name="gender" value="Female"><label>Female</label>
+                    <input type="radio" name="gender" value="Female"><label>Other</label>
+                </label>
+            </p>
+            <p>
+                <label>Rate the quality of our site: 
+                    <select name="rating" id="rating">
+                        <option selected>10</option>
+                        <option>9</option>
+                        <option>8</option>
+                        <option>7</option>
+                        <option>6</option>
+                        <option>5</option>
+                        <option>4</option>
+                        <option>3</option>
+                        <option>2</option>
+                        <option>1</option>
+                    </select>
+                </label>
+            </p>
+            <p>
+                <label>Rate us: <br>
+                    <input type="range" name="rating" min="1" max="10" step="1">
+                    <label></label>
+                </label>
+            </p>
+            <p>
+                <label> What is your level of education? <br><br>
+                    <input type="radio"><label>Professor</label>
+                    <input type="radio"><label>Doctoral Student</label>
+                    <input type="radio"><label>Master's Student</label>
+                    <input type="radio"><label>Bachelor's Student</label>
+                </label>
+            </p>
+            
+            <p>
+                <label for="title">Choose a title:</label>
+                <select id="title" name="title" autofocus>
+                <option value="Professor">Professor</option>
+                <option value="Doctoral Student">Doctoral Student</option>
+                <option value="Master's Student">Master's Student</option>
+                <option value="Bachelor's Student">Bachelor's Student</option>
+                </select>
+
+            </p>
+            <p>
+                <input type="submit" value = "Submit">
+                <input type="reset" value="Clear">
+            </p>
+        </form>
+    </body>
+</html>

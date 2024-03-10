@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div id="obj">Counter</div>
+</body>
+<script>
+var counter = 0;
+var obj = document.getElementById("obj");
+var repeater = window.setInterval(function() {
+counter += 1;
+if (counter >= 15) {
+window.clearInterval(repeater);
+}
+obj.innerHTML = "Counting ["+ counter +"]...";
+}, 1000);
+</script>
+</html>

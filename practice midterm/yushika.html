@@ -1,0 +1,57 @@
+<!-- Write an HTML5 element (or elements) to accomplish each of the following tasks:
+a) Students were asked to rate the food in the cafeteria on a scale of 1 to 10. Use a meter
+element with text to its left and right to indicate that the average rating was 7 out of 10.
+b) Create a details element that displays the summary text "Survey Results" for Part (a).
+When the user clicks the arrow next to the summary text, an explanatory paragraph about
+the survey should be displayed.
+c) Create a text input element for a first name. The element should automatically receive
+the focus when the form is rendered in a browser.
+d) Modify Part (c) to eliminate the label element and use placeholder text in the input
+element.
+e) Use a datalist to provide an autocomplete list for five states.
+f) Create a range input element that allows the user to select a number from 1 to 100.
+g) Specify that autocomplete should not be allowed for a form. Show only the form’s
+opening tag. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            Food rating
+        </title>
+    </head>
+    <body>
+        <p>
+            <label> Food Rating: <br>
+                1 <meter min="1" max="10" value="7"></meter> 10
+            </label>
+        </p>
+        <details>
+            <summary>
+                Survey Results
+            </summary>
+            <p>The Cafeteria's survey shows that the food rating is 7 out of 10</p>
+        </details>
+        <p>
+            
+            <input type="text" name="name" autofocus placeholder="Enter first name">
+            
+        </p>
+        <p>
+            <label>Choose a state: </label>
+            <input list="states" name="stateName" id="stateName" autocomplete="on">
+            <datalist id="states">
+                <option value="California"></option>
+                <option value="Ohio"></option>
+                <option value="San Francisco"></option>
+                <option value="Washington"></option>
+                <option value="New York"></option>
+            </datalist>
+        </p>
+        <p> Choose a number : <br>
+            <input type="range" min="0" max="100" step="1">
+        </p>
+        <input type="submit" value="SUBMIT">
+    </body>
+</html>

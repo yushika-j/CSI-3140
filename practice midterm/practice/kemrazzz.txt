@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Password Generator</title>
+<script>
+function passwordGenerator(length, input) {
+    const characterSet = {
+        uppercase: 'QWERTYUIOPLKJHGFDSAZXCVBNM',
+        lowercase: 'qwertyuioplkjhgfdsazxcvbnm',
+        numbers: '1234567890',
+        specialChars: '¡€#¢∞§¶•ªº–≠!@£$%^&*()_+'
+    };
+
+    let pool = '';
+    let password = '';
+
+    for (const [INPUT, value] of Object.entries(input)) {
+        if (value && characterSet[INPUT]) {
+            pool += characterSet[INPUT];
+        }
+    }
+
+    password = Array.from({length}, () => pool[Math.floor(Math.random() * pool.length)]).join('');
+
+    return password;
+}
+
+function Display() {
+    const input = {
+        uppercase: true,
+        lowercase: true,
+        numbers: true,
+        specialChars: true
+    };
+
+    const passwordLength = 12;
+    const password = passwordGenerator(passwordLength, input);
+    document.getElementById("password").textContent = password;
+}
+</script>
+</head>
+<body>
+    <h1>My Password Generator</h1>
+    <button onclick="Display()">Generate my password</button>
+    <p id="password"></p>
+</body>
+</html>

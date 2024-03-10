@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Linear Gradient</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 8px;
+            padding: 8px;
+            border: solid 6px;
+            border-color: navy;
+            float: left;
+            text-align: center;
+            margin-right: 15px;
+            background: linear-gradient(
+                to bottom right,
+                red 10%,
+                orange 50%,
+                green 75%
+            );
+}
+
+
+        #horizontal {
+            width: 200px;
+            height: 200px;
+            background: -webkit-gradient(
+            linear, left top, right top,
+            color-stop(15%, white), color-stop(50%, yellow),
+            color-stop(75%, orange) );
+            background: -moz-linear-gradient(
+            left, white 15%, yellow 50%, orange 75% );
+            background: linear-gradient(
+            90deg, white 15%, yellow 50%, orange 75% );
+            text-align: center;
+            margin-right: 15px;
+        }
+
+        #angle {
+            width: 200px;
+            height: 200px;
+            border: 3px solid Purple;
+            padding: 5px 20px;
+            text-align: center;
+            background: -webkit-gradient(
+                linear,left top, right bottom,
+                color-stop(15%,white), 
+                color-stop(50%, plum),
+                color-stop(75%,purple));
+            background: -moz-linear-gradient(
+                top left, white 15%, plum 50%, purple 75%
+            );
+            background: linear-gradient(
+            45deg, white 15%, plum 50%, purple 75% );
+
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div id="ailo">
+        <h2>Vertical Linear Gradient</h2>
+    </div>
+    <div id="horizontal">
+        <h2>Horizontal Linear Gradient</h2>
+    </div>
+    <div id="angle">
+        <h2>Diagonal Linear Gradient</h2>
+    </div>
+</body>
+
+</html>
