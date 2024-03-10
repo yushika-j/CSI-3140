@@ -1,0 +1,9 @@
+
+/* Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450 */
+
+h1,h2{
+    padding: 0.5em;
+    border-style: dashed;
+    margin: 0.5em;
+}

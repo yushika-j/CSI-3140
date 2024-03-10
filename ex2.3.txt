@@ -1,0 +1,16 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2.3</title>
+    </head>
+    <body>
+        <h1>Internet and World Wide Web How to Program: Fifth Edition</h1>
+        <hr>
+        <p>Welcome to the world of Internet programming. We have provided coverage for many Internet-related topics.</p>
+    </body>
+</html>

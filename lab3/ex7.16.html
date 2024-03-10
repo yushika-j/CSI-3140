@@ -1,0 +1,48 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!-- Write a script that uses looping to print the following table of values. Output the results in
+an HTML5 table. Use CSS to center the data in each column. -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ex7.16</title>
+        <script>
+
+        </script>
+        <style>
+            table, th, td {
+                border: 2px solid rgb(163, 161, 161);
+                border-radius: 3px;
+                
+            }
+            th, td {
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>N</th>
+                <th>10*N</th>
+                <th>100*N</th>
+                <th>1000*N</th>
+            </tr>
+            <script>
+                for (var i = 1; i <= 6; i++) {
+                    document.write("<tr>");
+                    document.write("<td>" + i + "</td>");
+                    document.write("<td>" + 10 * i + "</td>");
+                    document.write("<td>" + 100 * i + "</td>");
+                    document.write("<td>" + 1000 * i + "</td>");
+                    document.write("</tr>");
+                }
+            </script>
+        </table>
+        
+    </body>
+</html>

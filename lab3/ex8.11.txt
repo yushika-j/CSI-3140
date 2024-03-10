@@ -1,0 +1,51 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Mail Order
+        </title>
+        <script>
+            var quantity;
+            var total = 0;
+            var price;
+           while(true){
+                var productNum = prompt("Enter the product number for product (1-5) or q if you want to quit");
+                if (productNum.toLowerCase() === "q"){
+                    break;
+                }
+                switch (productNum){
+                    case "1":
+                        price = 2.98;
+                        break;
+                    case "2":
+                        price = 4.50;
+                        break;
+                    case "3":
+                        price = 9.98;
+                        break;
+                    case "4":
+                        price = 4.49;
+                        break;
+                    case "5":
+                        price = 6.87;
+                        break;
+                    default:
+                        alert("Invalid product number");
+                        continue;
+                }
+                quantity = parseInt(prompt("Enter the quantity sold for product " + productNum + ": "));
+                total += price * quantity;
+            }
+        </script>
+    </head>
+    <body>
+        <p>
+            The total retail value of all the products sold last week is: $<script>document.write(total.toFixed(2));</script>
+        </p>
+    </body>
+</html>

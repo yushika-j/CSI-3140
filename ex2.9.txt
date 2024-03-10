@@ -1,0 +1,26 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Examples</title>
+</head>
+
+<body>
+    <h1>Chapter Examples</h1>
+    <ul>
+        <li><a href="examples/example1.html">Example 1</a></li>
+        <li><a href="examples/example2.html">Example 2</a></li>
+        <li><a href="examples/example3.html">Example 3</a></li>
+        <li><a href="examples/example4.html">Example 4</a></li>
+        
+    </ul>
+</body>
+
+</html>

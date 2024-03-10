@@ -1,0 +1,34 @@
+
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!-- Write statements that assign random integers to the variable n in the following ranges:
+a) 1 ≤n ≤2
+b) 1 ≤n ≤100
+c) 0 ≤n ≤9 -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Random Integers</title>
+        <script>
+            function generateRandom() {
+                var num1 = Math.floor(Math.random() * 2) + 1;
+                var num2 = Math.floor(Math.random() * 100) + 1;
+                var num3 = Math.floor(Math.random() * 10);
+                
+                document.getElementById("output1").textContent = "(a) Random number between 1 and 2: " + num1;
+                document.getElementById("output2").textContent = "(b) Random number between 1 and 100: " + num2;
+                document.getElementById("output3").textContent = "(c) Random number between 0 and 9: " + num3;
+            }
+        </script>
+    </head>
+<body>
+    <h2>Random Integers</h2>
+    <button onclick="generateRandom()">Generate Random Numbers</button>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+</body>
+</html>

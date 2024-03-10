@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 3.6</title>
+    </head>
+    <body>
+        <form method="post" autocomplete="on">
+            <p>
+                <label>
+                    First Name:
+                    <input type="text" id="firstName" 
+                        placeholder="First Name" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Last Name:
+                    <input type="text" id="lastName" 
+                        placeholder="Last Name" />
+                </label>
+            </p>
+            <p>
+                <label>
+                    Email:
+                    <input type = "email" id = "email"
+                        placeholder = "name@domain.com" /> 
+                </label>
+            </p>
+            <p>
+                <details>
+                    <summary>Optional survey</summary>
+                <label for="yearInCollege">What is your year in college?</label>
+                <select id="yearInCollege" name="yearInCollege">
+                    <option value="freshman">Freshman</option>
+                    <option value="sophomore">Sophomore</option>
+                    <option value="junior">Junior</option>
+                    <option value="senior">Senior</option>
+                    <option value="other">Other</option>
+                </select>
+                
+                </label>
+            </p>
+            <p>
+                <input type="submit" value="Submit" />
+                <input type="reset" value="Clear" />
+            </p>
+        </form>
+    </body>
+</html>

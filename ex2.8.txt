@@ -1,0 +1,19 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2.8</title>
+    </head>
+    <body>
+        <h1>My Favorite Daily Deals Web Sites.</h1>
+        <a href="https://www.groupon.com" title="Groupon">Groupon</a><br>
+        <a href="https://www.wagjag.com" title="WagJag">WagJag</a><br>
+        <a href="https://www.shopbot.ca" title="ShopBot">ShopBot</a><br>
+        <a href="https://www.livingsocial.com" title="LivingSocial">LivingSocial</a><br>
+        <a href="https://www.teambuy.ca" title="TeamBuy">TeamBuy</a>
+    </body>
+</html>

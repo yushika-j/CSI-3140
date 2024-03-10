@@ -1,0 +1,29 @@
+
+
+<!-- Write a script that draws eight concentric circles. 
+    For each new circle, increase value of the radius by 5. Vary the circles colors  -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fig 14.11</title>
+        <script src="collections.js"></script>	
+    </head>
+    <body>
+        <canvas id="concentricCirclesCanvas" width="500" height="500"></canvas>
+        <script>
+            var canvas = document.getElementById("concentricCirclesCanvas");
+            var context = canvas.getContext("2d");
+            var radius = 120;
+            var colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet", "black"];
+            for (var i = 0; i < 8; i++) {
+                context.beginPath();
+                context.arc(250, 250, radius, 0, 2 * Math.PI, false);
+                context.fillStyle = colors[i].toString();
+                context.fill();
+                radius -= 15;
+            }
+        </script>
+
+    </body>

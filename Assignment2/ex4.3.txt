@@ -1,0 +1,21 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 4.3</title>
+  <style>
+    body {
+      font-size: 1.5em;
+      color: red;
+    }
+  </style>
+
+</head>
+<body>
+  <p>This is a paragraph with red text and a font 1.5 times larger than the base font.</p>
+</body>
+</html>

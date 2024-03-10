@@ -1,0 +1,33 @@
+1.12  How do clustered systems differ from multiprocessor systems? What is required for two machines belonging to a cluster to cooperate to provide a highly available service?
+1.13  Consider a computing cluster consisting of two nodes running a database. Describe two ways in which the cluster software can manage access to the data on the disk. Discuss the benefits and disadvantages of each.
+1.14  What is the purpose of interrupts? How does an interrupt differ from a trap? Can traps be generated intentionally by a user program? If so, for what purpose?
+1.15  Explain how the Linux kernel variables HZ and jiffies can be used to determine the number of seconds the system has been running since it was booted.
+1.16  Direct memory access is used for high-speed I/O devices in order to avoid increasing the CPU’s execution load.
+    a. How does the CPU interface with the device to coordinate the transfer?
+    b. How does the CPU know when the memory operations are complete?
+    c. The CPU is allowed to execute other programs while the DMA controller is transferring data. Does this process interfere with the execution of the user programs? If so, describe what forms of interference are caused.
+EX-1 1.17  Some computer systems do not provide a privileged mode of operation in hardware. Is it possible to construct a secure operating system for these computer systems? Give arguments both that it is and that it is not possible.
+1.18  Many SMP systems have different levels of caches; one level is local to each processing core, and another level is shared among all processing cores. Why are caching systems designed this way?
+1.19  Rank the following storage systems from slowest to fastest:
+    a. Hard-disk drives
+    b. Registers
+    c. Optical disk
+    d. Main memory
+    e. Nonvolatile memory
+    f. Magnetic tapes
+    g. Cache
+Exercises
+1.20  Consider an SMP system similar to the one shown in Figure 1.8. Illustrate with an example how data residing in memory could in fact have a different value in each of the local caches.
+1.21  Discuss, with examples, how the problem of maintaining coherence of cached data manifests itself in the following processing environments:
+    a. Single-processor systems
+    b. Multiprocessor systems
+    c. Distributed systems
+1.22  Describe a mechanism for enforcing memory protection in order to prevent a program from modifying the memory associated with other programs.
+1.23  Which network configuration—LAN or WAN—would best suit the following environments?
+    a. A campus student union
+    b. Several campus locations across a statewide university system
+    c. A neighborhood
+1.24  Describe some of the challenges of designing operating systems for mobile devices compared with designing operating systems for traditional PCs.
+1.25  What are some advantages of peer-to-peer systems over client–server systems?
+1.26  Describe some distributed applications that would be appropriate for a peer-to-peer system.
+EX-2 1.27  Identify several advantages and several disadvantages of open-source operating systems. Identify the types of people who would find each aspect to be an advantage or a disadvantage.

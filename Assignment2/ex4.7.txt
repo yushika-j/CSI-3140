@@ -1,0 +1,37 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Exercise 4.7
+        </title>
+        <style>
+            h1{
+                background-color: red;
+                border: 2px solid black;
+                
+                   
+            }
+
+            p{
+                background-color: blue;
+                border: 2px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>
+            This is a heading
+        </h1>
+        <p>
+            This is the first paragraph
+        </p>
+        <p>
+            This is the second paragraph
+        </p>
+    </body>
+    
+</html>

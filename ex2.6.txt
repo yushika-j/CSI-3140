@@ -1,0 +1,33 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2.6</title>
+    </head>
+    <body>
+        <ol>
+            <li>Ice cream</li>
+                <ul>
+                    <li>Vanilla</li>
+                    <li>Chocolate</li>
+                    <li>Strawberry</li>
+                </ul>
+            <li>Soft serve</li>
+                <ul>
+                    <li>Vanilla</li>
+                    <li>Chocolate</li>
+                    <li>Orange</li>
+                </ul>
+            <li>Frozen Yogurt</li>
+                <ul>
+                    <li>Blueberry</li>
+                    <li>Vanilla</li>
+                    <li>Strawberry</li>
+                </ul>
+        </ol>
+    </body>
+</html>

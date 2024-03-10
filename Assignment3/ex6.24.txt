@@ -1,0 +1,43 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Squares and Cubes Table</title>
+</head>
+<body>
+
+<script>
+    // Function to calculate square
+    function calculateSquare(num) {
+        return num * num;
+    }
+
+    // Function to calculate cube
+    function calculateCube(num) {
+        return num * num * num;
+    }
+
+    // Create HTML table header
+    document.write("<table border='1'><tr><th>number</th><th>square</th><th>cube</th></tr>");
+
+    // Loop through numbers 0 to 5
+    for (var i = 0; i <= 5; i++) {
+        var square = calculateSquare(i);
+        var cube = calculateCube(i);
+
+        // Create HTML table row for each number
+        document.write("<tr><td>" + i + "</td><td>" + square + "</td><td>" + cube + "</td></tr>");
+    }
+
+    // Close the HTML table
+    document.write("</table>");
+</script>
+
+</body>
+</html>

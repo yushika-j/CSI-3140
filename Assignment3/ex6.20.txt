@@ -1,0 +1,44 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ex6.8</title>
+    <script type="text/javascript">
+        // Read five integers from the user
+        const numbers = [];
+        for (let i = 0; i < 5; i++) {
+            const num = parseInt(prompt("Enter an integer: "));
+            numbers.push(num);
+        }
+
+        // Find the largest and smallest integers
+        let largest = numbers[0];
+        let smallest = numbers[0];
+        for (let i = 1; i < numbers.length; i++) {
+            if (numbers[i] > largest) {
+                largest = numbers[i];
+            }
+            if (numbers[i] < smallest) {
+                smallest = numbers[i];
+            }
+        }
+
+        // Output markup displaying the largest and smallest integers
+        document.write("<p>The largest integer is: " + largest + "</p>");
+        document.write("<p>The smallest integer is: " + smallest + "</p>");
+
+
+        // Output the largest and smallest integers to the console
+        
+    </script>
+</head>
+<body>
+    <p id="largest"></p>
+    <p id="smallest"></p>
+</body>
+</html>

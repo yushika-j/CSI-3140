@@ -1,0 +1,64 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <title>Number Operations</title>
+</head>
+<body>
+
+<script>
+    
+    function calculateSum(num1, num2, num3) {
+        return num1 + num2 + num3;
+    }
+
+   
+    function calculateAverage(sum) {
+        return sum / 3;
+    }
+
+    
+    function calculateProduct(num1, num2, num3) {
+        return num1 * num2 * num3;
+    }
+
+    
+    function findSmallest(num1, num2, num3) {
+        return Math.min(num1, num2, num3);
+    }
+
+   
+    function findLargest(num1, num2, num3) {
+        return Math.max(num1, num2, num3);
+    }
+
+  
+    var num1 = parseInt(prompt("Enter the first integer:"));
+    var num2 = parseInt(prompt("Enter the second integer:"));
+    var num3 = parseInt(prompt("Enter the third integer:"));
+
+   
+    var sum = calculateSum(num1, num2, num3);
+    var average = calculateAverage(sum);
+    var product = calculateProduct(num1, num2, num3);
+    var smallest = findSmallest(num1, num2, num3);
+    var largest = findLargest(num1, num2, num3);
+
+    
+    var resultMessage = "Sum: " + sum +
+                        "\nAverage: " + average +
+                        "\nProduct: " + product +
+                        "\nSmallest: " + smallest +
+                        "\nLargest: " + largest;
+
+    alert(resultMessage);
+</script>
+
+</body>
+</html>

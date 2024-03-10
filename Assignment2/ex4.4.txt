@@ -1,0 +1,36 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Exercise 4.4</title>
+  <style>
+    body {
+      background-image: url('Landscape.jpg'); 
+      background-position: center 50%;
+      background-repeat: repeat-x;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0; 
+    }
+    #content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="content">
+    <h1>Hello</h1>
+    <p> Here is the HTML document with a background image.</p>
+  </div>
+
+</body>
+</html>

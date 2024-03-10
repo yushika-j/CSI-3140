@@ -1,0 +1,20 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2.4</title>
+    </head>
+    <body>
+        <h3>(a) Increase the size of the image by 100 percent</h3>
+        <img src="deitel.jpg" alt="Deitel Image" width="400" height="300">
+
+        <h3>(b) Increase the size of the image by 50 percent/h3>
+        <img src="deitel.jpg" alt="Deitel Image" width="300" height="225">
+
+        <h3>(c) Change the width-to-height ratio to 2:1, keeping the width attained in part (a)</h3>
+        <img src="deitel.jpg" alt="Deitel Image" width="400" height="200">
+    </body>
+</html>

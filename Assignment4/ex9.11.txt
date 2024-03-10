@@ -1,0 +1,14 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+<!-- Write statements that assign random integers to the variable n in the following ranges:
+a) 1 ≤n ≤2
+b) 1 ≤n ≤100
+c) 0 ≤n ≤9 -->
+
+
+(a) var n = Math.floor(Math.random() * 2) + 1;
+(b) var n = Math.floor(Math.random() * 100) + 1;
+(c) var n = Math.floor(Math.random() * 10);

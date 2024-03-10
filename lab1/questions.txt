@@ -1,0 +1,25 @@
+3.6 (Website Registration Form with Optional Survey) Create a website registration form to obtain a user’s first name, last name and e-mail address. 
+In addition, include an optional survey question that asks the user’s year in college (e.g., Freshman). 
+Place the optional survey question in a details element that the user can expand to see the question.
+
+3.7 (Creating an Autocomplete Form) Create a simple search form using a search input element in which the user can enter a search query.
+ Using the Firefox web browser, test the form by entering January and submitting the form. Then enter a J in the input element to see 
+ previous entries that started with J—January should be displayed below the input element. Enter June and submit the form again. 
+ Now enter a J in the input element to see previous entries that started with J—
+January and June should be displayed below the input element. Try this with your own search queries as well.
+
+3.8 (Creating an Autocomplete Form with a datalist) Create an autocomplete input element
+with an associated datalist that contains the days of the week.
+
+3.9 (Laying Out Book Pages in HTML5: Creating the Sections) Mark up the paragraph text
+from Section 3.2.1 of this chapter as a web page using page-structure elements. The text is provided
+in the exerciseTextAndImages folder with this chapter’s examples. Do not include the figures in
+this exercise.
+
+3.10 (Laying Out Book Pages in HTML5: Adding Figures) Modify your solution to Exercise 3.9
+to add the section’s graphics as figures. The images are provided in the exerciseTextAndImages
+folder with this chapter’s examples.
+
+3.11 (Laying Out Book Pages in HTML5: Adding a details Element) Modify your solution to
+Exercise 3.10 to add the table in Fig. 3.5. Use the figure caption as the summary and format the table
+as an HTML table element inside the details element.

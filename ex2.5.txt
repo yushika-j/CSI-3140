@@ -1,0 +1,18 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 2.5</title>
+    </head>
+    <body>
+        <a href="files/index.html">Link to index.html in files directory</a>
+        <a href="files/text/index.html">Link to index.html in files/text directory</a>
+        <a href="../other/index.html">Link to index.html in other directory</a>
+        <a href="mailto:president@whitehouse.gov">Email the President</a>
+        <a href="ftp://ftp.cdrom.com/pub/README">Link to README in ftp.cdrom.com/pub directory</a>
+
+    </body>
+</html>

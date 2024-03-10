@@ -1,0 +1,30 @@
+
+
+<!-- 14.7 (Diaglonal Linear Gradient) Create a canvas with a width and height of 500. 
+    Create a diagonal linear gradient using the colors of the rainbow—red, orange, 
+    yellow, green, blue, indigo, violet. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Fig 14.7</title>
+        <script src="collections.js"></script>	
+    </head>
+    <body>
+        <canvas id="diagonalGradientCanvas" width="500" height="500"></canvas>
+        <script>
+            var canvas = document.getElementById("diagonalGradientCanvas");
+            var context = canvas.getContext("2d");
+            var gradient = context.createLinearGradient(0, 0, 500, 500);
+            gradient.addColorStop(0, "red");
+            gradient.addColorStop(1/6, "orange");
+            gradient.addColorStop(2/6, "yellow");
+            gradient.addColorStop(3/6, "green");
+            gradient.addColorStop(4/6, "blue");
+            gradient.addColorStop(5/6, "indigo");
+            gradient.addColorStop(1, "violet");
+            context.fillStyle = gradient;
+            context.fillRect(0, 0, 500, 500);
+        </script>
+    </body>

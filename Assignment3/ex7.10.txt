@@ -1,0 +1,7 @@
+<!-- ********************************
+Yushika Jhundoo - 300269830
+Nidhi Pareshkumar Thakkar - 300202450
+************************************* -->
+
+This code calculates the squares of numbers from 1 to 10 and prints each square. 
+After the loop, it prints the total of all the squares.
