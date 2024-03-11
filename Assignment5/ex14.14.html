@@ -17,8 +17,8 @@
         var ctx = canvas.getContext('2d');
 
         // Set initial circle properties
-        var x = canvas.width - 500;
-        var y = canvas.height/2;
+        var x = radius;
+        var y = canvas.height - radius;
         var radius = 20;
         var speed = 3; // Speed of movement
 
@@ -31,25 +31,22 @@
             ctx.fill();
         }
 
-        // Function to update the position of the circle
-        // Function to update the position of the circle
-function updatePosition() {
-    // Move the circle along a diamond pattern
-    if (x + radius >= canvas.width / 2 && y + radius < canvas.height) {
+        function updatePosition() {
+    // Move the circle along a diamond pattern in counter-clockwise direction
+    if (x + radius > canvas.width / 2 && y - radius >= 0) {
         x += speed;
-        y += speed;
-    }else if (x + radius < canvas.width / 2 && y - radius >= 0) {
-        x += speed;
-        y -= speed; 
-    } else if (x - radius > 0 && y + radius >= canvas.height / 2) {
-        x -= speed;
-        y += speed;
-    } else if (x - radius <= canvas.width / 2 && y - radius > 0) {
+        y -= speed;
+    } else if (x - radius >= 0 && y - radius > 0) {
         x -= speed;
         y -= speed;
+    } else if (x - radius >= 0 && y + radius < canvas.height) {
+        x -= speed;
+        y += speed;
+    } else if (x + radius < canvas.width && y + radius <= canvas.height) {
+        x += speed;
+        y += speed;
     }
 }
-
 
         // Function to continuously move the circle
         function moveCircle() {
