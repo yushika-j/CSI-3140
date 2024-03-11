@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Moving Circle 1</title>
+    <title>Moving Circle</title>
     <style>
         canvas {
             border: 1px solid black;
@@ -17,42 +17,51 @@
         var ctx = canvas.getContext('2d');
 
         // Set initial circle properties
-        var x = radius;
-        var y = canvas.height - radius;
+        var centerX = canvas.width / 2;
+        var centerY = 0; // Start from the top edge
         var radius = 20;
-        var speed = 3; // Speed of movement
+        var speed = 4; // Speed of movement
+        var edgePoints = [
+            { x: canvas.width / 2, y: 0 }, // Top edge center
+            { x: canvas.width, y: canvas.height / 2 }, // Right edge center
+            { x: canvas.width / 2, y: canvas.height }, // Bottom edge center
+            { x: 0, y: canvas.height / 2 } // Left edge center
+        ];
+        var currentEdgePointIndex = 0;
 
         // Function to draw the circle
         function drawCircle() {
             ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
             ctx.beginPath();
-            ctx.arc(x, y, radius, 0, Math.PI * 2);
+            ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
             ctx.fillStyle = 'blue';
             ctx.fill();
         }
 
-        function updatePosition() {
-    // Move the circle along a diamond pattern in counter-clockwise direction
-    if (x + radius > canvas.width / 2 && y - radius >= 0) {
-        x += speed;
-        y -= speed;
-    } else if (x - radius >= 0 && y - radius > 0) {
-        x -= speed;
-        y -= speed;
-    } else if (x - radius >= 0 && y + radius < canvas.height) {
-        x -= speed;
-        y += speed;
-    } else if (x + radius < canvas.width && y + radius <= canvas.height) {
-        x += speed;
-        y += speed;
-    }
-}
-
         // Function to continuously move the circle
         function moveCircle() {
             drawCircle(); // Draw the circle
-            updatePosition(); // Update the position
-            requestAnimationFrame(moveCircle); // Continuously move the circle
+
+            // Move the circle towards the current edge point
+            var targetX = edgePoints[currentEdgePointIndex].x;
+            var targetY = edgePoints[currentEdgePointIndex].y;
+            var dx = targetX - centerX;
+            var dy = targetY - centerY;
+            var distance = Math.sqrt(dx * dx + dy * dy);
+            var ratio = speed / distance;
+
+            // Update the circle's position
+            if (distance > speed) {
+                centerX += dx * ratio;
+                centerY += dy * ratio;
+            } else {
+                centerX = targetX;
+                centerY = targetY;
+                currentEdgePointIndex = (currentEdgePointIndex + 3) % edgePoints.length; // Move to the previous edge point for anticlockwise movement
+            }
+
+            // Continue moving the circle
+            requestAnimationFrame(moveCircle);
         }
 
         moveCircle(); // Start moving the circle
