@@ -17,8 +17,9 @@ document.addEventListener(DOMContentLoaded, function(){
 
     //populate table
     function populateTable(data){
-        var table = document.getElementById('productTable');
+        var table = document.getElementById('table-body');
 
+        table.innerHTML = '';
         data.forEach(function(product){
             var row = table.insertRow();
             row.insertCell().innerHTML = product.name;
