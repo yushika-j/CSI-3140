@@ -74,6 +74,8 @@ document.addEventListener(DOMContentLoaded, function(){
     fetchData("summary.json", function(summaryData) {
         // Populate the table with product information
         populateTable(summaryData);
+        // Add hover effect to product images
+        imageHover();
     });
 
 });
