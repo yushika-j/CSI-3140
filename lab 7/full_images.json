@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "filename": "product1_full.jpg"
+    },
+    {
+      "id": 2,
+      "filename": "product2_full.jpg"
+    },
+    {
+      "id": 3,
+      "filename": "product3_full.jpg"
+    },
+    {
+        "id": 4,
+        "filename": "product4_full.jpg"
+    },
+    {
+        "id": 5,
+        "filename": "product5_full.jpg"}
+  ]
