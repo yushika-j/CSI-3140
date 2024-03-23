@@ -81,7 +81,7 @@ h1 {
 /* Apply styles to buttons */
 button {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #cf0a24;
     color: #fff;
     border: none;
     cursor: pointer;
@@ -90,5 +90,9 @@ button {
 
 /* Apply styles to buttons on hover */
 button:hover {
-    background-color: #0056b3;
+    background-color: #941e28;
+}
+
+button:active {
+    background-color: #640912;
 }
