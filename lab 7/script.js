@@ -1,4 +1,4 @@
-document.addEventListener(DOMContentLoaded, function(){
+document.addEventListener("DOMContentLoaded", function(){
 
     function fetchData(url, callback){
         var asyncRequest = new XMLHttpRequest();
@@ -22,10 +22,11 @@ document.addEventListener(DOMContentLoaded, function(){
         table.innerHTML = '';
         data.forEach(function(product){
             var row = table.insertRow();
-            row.insertCell().innerHTML = product.name;
+            row.insertCell().innerHTML = product.title;
             row.insertCell().innerHTML = product.id;
             row.insertCell().innerHTML = product.price;
-            row.insertCell().innerHTML = '<img src = "${product.thumbnail}" alt="${product.name}" class="thumbnail" />';
+            row.insertCell().innerHTML = '<img id="product-thumb" src="' + product.thumbnail + '" alt="' + product.title + '" class="thumbnail" />';
+
 
             // Create a button for each product to display description
             var buttonCell = row.insertCell();
