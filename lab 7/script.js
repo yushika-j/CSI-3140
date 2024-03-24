@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
         asyncRequest.open('GET', url, true);
         asyncRequest.send();
-
     }
 
     //populate table
@@ -20,32 +19,41 @@ document.addEventListener("DOMContentLoaded", function(){
         var table = document.getElementById('table-body');
 
         table.innerHTML = '';
-        data.forEach(function(product){
+        
+        data.forEach(function(product) {
             var row = table.insertRow();
-            row.insertCell().innerHTML = product.title;
-            row.insertCell().innerHTML = product.id;
-            row.insertCell().innerHTML = "$"+ product.price;
-            row.insertCell().innerHTML = '<img id="product-thumb" src="' + product.thumbnail + '" alt="' + product.title + '" class="thumbnail" />';
-
-
+        
+            // Insert product title
+            var titleCell = row.insertCell();
+            titleCell.innerHTML = product.title;
+        
+            // Insert product ID
+            var idCell = row.insertCell();
+            idCell.innerHTML = product.id;
+        
+            // Insert product price
+            var priceCell = row.insertCell();
+            priceCell.innerHTML = "$" + product.price;
+        
+            // Insert product thumbnail image
+            var imageCell = row.insertCell();
+            imageCell.innerHTML = '<img id="product-thumb" src="' + product.thumbnail + '" alt="' + product.title + '" class="thumbnail" />';
+            
+            // Insert product description
+            var descriptionCell = row.insertCell();
+            
+        
             // Create a button for each product to display description
             var buttonCell = row.insertCell();
             var button = document.createElement("button");
             button.textContent = "Show Description";
+            button.addEventListener("click", function() {
+                displayDescription(product.id, descriptionCell);
+            });
             buttonCell.appendChild(button);
             
-            row.addEventListener("click", function() {
-                displayDescription(product.id);
-            });
-            // // Create a button for each product to display description
-            // var buttonCell = row.insertCell();
-            // var button = document.createElement("button");
-            // button.textContent = "Show Description";
-            // button.addEventListener("click", function() {
-            //     displayDescription(product.id);
-            // });
-            // buttonCell.appendChild(button);
         });
+        
     }
 
     function imageHover(){
@@ -62,24 +70,15 @@ document.addEventListener("DOMContentLoaded", function(){
         });
     }
 
-    function displayDescription(productID){
+    function displayDescription(productID, descriptionCell){
        // Fetch product description based on productId
        fetchData("description.json", function(descriptionsData) {
             var description = descriptionsData.find(function(item) {
                 return item.id === productID;
             });
-
-            // Display the description in the designated area
-            var descriptionDiv = document.getElementById("productDescription");
-            descriptionDiv.innerHTML = "<h2>Description</h2>";
-            descriptionDiv.innerHTML += "<p>" + description.description + "</p>";
+            descriptionCell.innerHTML = '<p id="productDescription">' + description.description + '</p>';
         });
     }
-
-
-
-
-
 
     // Fetch data from summary.json when the page loads
     fetchData("summary.json", function(summaryData) {

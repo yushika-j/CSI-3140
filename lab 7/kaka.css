@@ -51,16 +51,17 @@ th {
 
 /* Apply styles to table cells */
 td {
-    justify-content: center;
+    padding: 10px;
+    border: 1px solid #ffffff;
 }
 
 
 /* Apply styles to product description */
 #productDescription {
-    display:flex;
+    display:block;
     margin-top: 0px;
     padding: 10px;
-    border: none;
+    border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #f9f9f9;
 }
@@ -97,20 +98,10 @@ button:active {
     height: 200px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    position: relative;
-}
-#product-thumb:hover{
-    background-color: #640912;
+    position:fixed;
 }
 
-
-#productDescription{
-    border:none;
-    color: #ffffff;
-    display:flex;
-    height: 200px;
-    max-width:100%;
-    max-height: 100%;
-    background-color:#886366;
+.pdescription {
+    display: none;
+    
 }
-
