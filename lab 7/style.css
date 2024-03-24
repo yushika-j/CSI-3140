@@ -14,9 +14,10 @@ p {
 }
 
 .productTable{
-    width: 100%;
+    width: 100px;
+    height: 200px;
     padding-left: 20px;
-    margin: 20px 0;
+    margin: 0px;
 
 }
 .thumbnail {
@@ -26,6 +27,7 @@ p {
     border-radius: 5px; 
     align-items: center;
 }
+
 
 /* Apply general styles to the body */
 body {
@@ -39,6 +41,7 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-bottom: 20px;
+    table-layout: fixed;
 }
 
 /* Apply styles to table headings */
@@ -97,11 +100,12 @@ button:active {
     height: 200px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    position: relative;
+    position:sticky;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
-#product-thumb:hover{
-    background-color: #640912;
-}
+
+
 
 
 #productDescription{
