@@ -24,7 +24,7 @@ p {
     height: auto; 
     border: 1px solid #ce3030; 
     border-radius: 5px; 
-
+    align-items: center;
 }
 
 /* Apply general styles to the body */
@@ -55,17 +55,11 @@ td {
     border: 1px solid #ccc;
 }
 
-/* Apply styles to product thumbnail images */
-.thumbnail {
-    width: 100px;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
 
 /* Apply styles to product description */
 #productDescription {
-    margin-top: 20px;
+    display: none;
+    margin-top: 0px;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -80,6 +74,7 @@ h1 {
 
 /* Apply styles to buttons */
 button {
+    width:70%;
     padding: 5px 10px;
     background-color: #cf0a24;
     color: #fff;
@@ -96,3 +91,13 @@ button:hover {
 button:active {
     background-color: #640912;
 }
+
+#product-thumb{
+    width: 200px;
+    justify-content: center;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    position: relative;
+}
+

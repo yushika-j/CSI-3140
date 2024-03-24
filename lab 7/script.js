@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function(){
             var row = table.insertRow();
             row.insertCell().innerHTML = product.title;
             row.insertCell().innerHTML = product.id;
-            row.insertCell().innerHTML = product.price;
+            row.insertCell().innerHTML = "$"+ product.price;
             row.insertCell().innerHTML = '<img id="product-thumb" src="' + product.thumbnail + '" alt="' + product.title + '" class="thumbnail" />';
 
 
@@ -32,10 +32,19 @@ document.addEventListener("DOMContentLoaded", function(){
             var buttonCell = row.insertCell();
             var button = document.createElement("button");
             button.textContent = "Show Description";
-            button.addEventListener("click", function() {
+            buttonCell.appendChild(button);
+            
+            row.addEventListener("click", function() {
                 displayDescription(product.id);
             });
-            buttonCell.appendChild(button);
+            // // Create a button for each product to display description
+            // var buttonCell = row.insertCell();
+            // var button = document.createElement("button");
+            // button.textContent = "Show Description";
+            // button.addEventListener("click", function() {
+            //     displayDescription(product.id);
+            // });
+            // buttonCell.appendChild(button);
         });
     }
 
@@ -55,7 +64,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     function displayDescription(productID){
        // Fetch product description based on productId
-       fetchData("descriptions.json", function(descriptionsData) {
+       fetchData("description.json", function(descriptionsData) {
             var description = descriptionsData.find(function(item) {
                 return item.id === productID;
             });
