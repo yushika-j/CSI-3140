@@ -4,7 +4,7 @@ body{
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 25px;
     color: #ffffff;
 }
 
@@ -21,10 +21,11 @@ p {
 
 }
 .thumbnail {
+    padding:16px;
     width: 200px; 
     height: auto; 
-    border: 1px solid #ce3030; 
-    border-radius: 5px; 
+    border: 0px solid #420404; 
+    border-radius: 0px; 
     align-items: center;
 }
 
@@ -50,25 +51,36 @@ th {
     padding: 10px;
     text-align: center;
     border: 1px solid #ccc;
+    
 }
 
 /* Apply styles to table cells */
 td {
     justify-content: center;
+    text-transform: uppercase;
 }
 
 
 /* Apply styles to product description */
 #productDescription {
     display:flex;
-    margin-top: 0px;
-    padding: 10px;
+    margin-top: 10px;
+    padding: 5px;
     border: none;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    color: #ffffff;
+    display:flex;
+    height: 200px;
+    max-width:85%;
+    max-height: 90%;
+    background-color:#886366;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    
 }
 
-/* Apply styles to headings */
+
 h1 {
     text-align: center;
     margin-top: 20px;
@@ -76,13 +88,13 @@ h1 {
 
 /* Apply styles to buttons */
 button {
-    width:70%;
+    width:60%;
     padding: 5px 10px;
     background-color: #cf0a24;
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 40px;
 }
 
 /* Apply styles to buttons on hover */
@@ -92,7 +104,9 @@ button:hover {
 
 button:active {
     background-color: #640912;
+    
 }
+
 
 #product-thumb{
     width: 200px;
@@ -103,18 +117,5 @@ button:active {
     position:sticky;
     margin-bottom: 15px;
     margin-top: 15px;
-}
-
-
-
-
-#productDescription{
-    border:none;
-    color: #ffffff;
-    display:flex;
-    height: 200px;
-    max-width:85%;
-    max-height: 90%;
-    background-color:#886366;
 }
 
