@@ -77,8 +77,11 @@ document.addEventListener("DOMContentLoaded", function(){
             });
 
             image.addEventListener('mouseout', function(){
+                var productID = image.getAttribute('data-product-id');
                 image.style.transform = 'scale(1)';
                 image.src = "product" + productID + ".jpg";
+                var productID = image.getAttribute('data-product-id');
+                fetchThumbnail(productID);
             });
         });
     }
@@ -91,6 +94,18 @@ document.addEventListener("DOMContentLoaded", function(){
             if(fullImage){
                 var imageCell = document.querySelector('img[data-product-id="' + productID + '"]');
                 imageCell.src = fullImage.image;
+            }
+        });
+    }
+
+    function fetchThumbnail(productID){
+        fetchData("thumbnails.json", function(thumbData) {
+            var thumbImage = thumbData.find(function(item) {
+                return item.id === productID;
+            });
+            if(thumbImage){
+                var thumbCell = document.querySelector('img[data-product-id="' + productID + '"]');
+                thumbCell.src = thumbImage.image;
             }
         });
     }
