@@ -49,7 +49,8 @@ table {
 th {
     background-color: #b84343;
     padding: 10px;
-    text-align: center;
+    justify-content: center;
+
     border: 1px solid #ccc;
     
 }
@@ -57,6 +58,7 @@ th {
 /* Apply styles to table cells */
 td {
     justify-content: center;
+    text-align: center;
     text-transform: uppercase;
 }
 
