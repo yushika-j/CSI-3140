@@ -1,0 +1,25 @@
+<html>
+<head>
+    <title>alo</title>
+    <style>
+        .circle {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            animation: move 4s linear infinite;
+            border-radius: 100px;
+        }
+
+        @keyframes move {
+            0% { transform: translate(0, 0); }
+            25% { transform: translate(200px, 0); }
+            50% { transform: translate(200px, 200px); }
+            75% { transform: translate(0, 200px); }
+            100% { transform: translate(0, 0); }
+        }
+    </style>
+</head>
+<body>
+    <div class="circle"></div>
+</body>
+</html>
